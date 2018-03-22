@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puG-gB-nMf">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="Qwy-Oz-fNu">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="lfZ-br-r6w">
@@ -27,6 +27,9 @@
                                                 <rect key="frame" x="20" y="7" width="170" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="New Game"/>
+                                                <connections>
+                                                    <action selector="pressedNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdy-Wr-xzU"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -36,7 +39,11 @@
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="g2y-Lr-CV8"/>
-                                    <barButtonItem title="New Game" id="t6I-vp-xf5"/>
+                                    <barButtonItem title="New Game" id="t6I-vp-xf5">
+                                        <connections>
+                                            <action selector="pressedNewGame:" destination="BYZ-38-t0r" id="mON-TR-kmx"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2H-eO-yxE" userLabel="Usable Area">
@@ -74,8 +81,11 @@
                                                         <include reference="oY7-hs-ul1"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czU-n7-bkt"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-I0-Ypg">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-I0-Ypg">
                                                 <rect key="frame" x="25" y="260" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="26N-RX-CR6"/>
@@ -104,8 +114,11 @@
                                                         <include reference="s8K-3T-8dR"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dx8-Pr-zoO"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8W-Eq-00e">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8W-Eq-00e">
                                                 <rect key="frame" x="25" y="200" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="DBM-6q-vXc"/>
@@ -134,8 +147,11 @@
                                                         <include reference="yIb-Sa-huG"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Le-2a-Nu5"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xM-w3-Ee5">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xM-w3-Ee5">
                                                 <rect key="frame" x="25" y="140" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="1Y6-x4-5KY"/>
@@ -164,8 +180,11 @@
                                                         <include reference="oba-ph-tx1"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPn-L1-UbO"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="156-R6-Meb">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="156-R6-Meb">
                                                 <rect key="frame" x="25" y="80" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="E8D-qz-gcb"/>
@@ -194,8 +213,11 @@
                                                         <include reference="mMP-gn-Idm"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHf-iC-BQ8"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OH-bj-y6m">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OH-bj-y6m">
                                                 <rect key="frame" x="25" y="20" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="VtR-yN-40g"/>
@@ -224,8 +246,11 @@
                                                         <include reference="yr2-WH-Nf1"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Njj-m8-5DE"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkk-d9-woZ">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkk-d9-woZ">
                                                 <rect key="frame" x="95" y="20" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="0QD-m3-okX"/>
@@ -254,8 +279,11 @@
                                                         <include reference="uCb-FI-9Uf"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FgU-6X-LEH"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-vo-fUN">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-vo-fUN">
                                                 <rect key="frame" x="155" y="48" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="KpI-mc-y5e"/>
@@ -284,8 +312,11 @@
                                                         <include reference="tOu-fi-WJa"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="anr-rT-Ch2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-p3-Rfg">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-p3-Rfg">
                                                 <rect key="frame" x="182" y="110" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="LDD-sk-Olc"/>
@@ -314,8 +345,11 @@
                                                         <include reference="MY1-qz-oUt"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1d-Wy-jDG"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12j-rM-f7Y">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12j-rM-f7Y">
                                                 <rect key="frame" x="155" y="172" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="GwZ-jS-X3u"/>
@@ -350,8 +384,11 @@
                                                         <include reference="cJ0-6h-nka"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6g-4a-tkA"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8A-4d-xEO">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8A-4d-xEO">
                                                 <rect key="frame" x="95" y="200" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="67C-i4-ixH"/>
@@ -386,8 +423,11 @@
                                                         <include reference="kjJ-F6-nLo"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3OH-aF-mnk"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-tc-ucz">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-tc-ucz">
                                                 <rect key="frame" x="135" y="260" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="59e-qF-SDE"/>
@@ -422,8 +462,11 @@
                                                         <include reference="vnh-Th-A3G"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O95-fX-EE9"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rV-t9-g8a">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rV-t9-g8a">
                                                 <rect key="frame" x="175" y="320" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="9jI-qw-S0l"/>
@@ -458,6 +501,9 @@
                                                         <include reference="rCR-IC-B6H"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="lightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLS-AP-S8f"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.67264083860000001" green="1" blue="0.5524652847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -561,20 +607,16 @@
                                                 <exclude reference="e47-fp-3wD"/>
                                                 <exclude reference="fli-Cm-z90"/>
                                                 <exclude reference="uJN-AI-2vR"/>
-                                                <exclude reference="1ky-pT-Mua"/>
-                                                <exclude reference="AHZ-XE-ogv"/>
-                                                <exclude reference="B5O-Oe-Svd"/>
-                                                <exclude reference="qgU-cG-ztN"/>
-                                                <exclude reference="29O-2F-SFB"/>
-                                                <exclude reference="Luv-ix-YcF"/>
-                                                <exclude reference="SR9-3S-VxU"/>
-                                                <exclude reference="YzK-B2-daX"/>
                                                 <exclude reference="169-qK-DTP"/>
                                                 <exclude reference="KPJ-pp-qsE"/>
                                                 <exclude reference="aO0-Hs-vjI"/>
                                                 <exclude reference="h4N-Ij-Qsh"/>
                                                 <exclude reference="wMl-0s-ToB"/>
                                                 <exclude reference="x4T-kj-eGR"/>
+                                                <exclude reference="29O-2F-SFB"/>
+                                                <exclude reference="Luv-ix-YcF"/>
+                                                <exclude reference="SR9-3S-VxU"/>
+                                                <exclude reference="YzK-B2-daX"/>
                                                 <exclude reference="Icl-3n-dj8"/>
                                                 <exclude reference="Vj3-uz-un8"/>
                                                 <exclude reference="aPm-Zo-BWT"/>
@@ -593,6 +635,10 @@
                                                 <exclude reference="amT-va-hdU"/>
                                                 <exclude reference="ohp-dT-SYZ"/>
                                                 <exclude reference="xN7-eQ-2qV"/>
+                                                <exclude reference="1ky-pT-Mua"/>
+                                                <exclude reference="AHZ-XE-ogv"/>
+                                                <exclude reference="B5O-Oe-Svd"/>
+                                                <exclude reference="qgU-cG-ztN"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -612,14 +658,12 @@
                                                 <include reference="z0K-gh-FcF"/>
                                                 <include reference="IzG-9C-T0R"/>
                                                 <include reference="uJN-AI-2vR"/>
-                                                <include reference="AHZ-XE-ogv"/>
-                                                <include reference="qgU-cG-ztN"/>
-                                                <include reference="SR9-3S-VxU"/>
-                                                <include reference="YzK-B2-daX"/>
                                                 <include reference="169-qK-DTP"/>
                                                 <exclude reference="h4N-Ij-Qsh"/>
                                                 <include reference="wMl-0s-ToB"/>
                                                 <exclude reference="x4T-kj-eGR"/>
+                                                <include reference="SR9-3S-VxU"/>
+                                                <include reference="YzK-B2-daX"/>
                                                 <include reference="Icl-3n-dj8"/>
                                                 <include reference="aPm-Zo-BWT"/>
                                                 <include reference="ZI5-yA-cxd"/>
@@ -630,6 +674,8 @@
                                                 <include reference="MHr-FZ-2cP"/>
                                                 <include reference="amT-va-hdU"/>
                                                 <exclude reference="ohp-dT-SYZ"/>
+                                                <include reference="AHZ-XE-ogv"/>
+                                                <include reference="qgU-cG-ztN"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=regular">
@@ -648,12 +694,10 @@
                                                 <include reference="Wsb-3F-z3u"/>
                                                 <include reference="e47-fp-3wD"/>
                                                 <include reference="fli-Cm-z90"/>
-                                                <include reference="1ky-pT-Mua"/>
-                                                <include reference="B5O-Oe-Svd"/>
-                                                <include reference="29O-2F-SFB"/>
-                                                <include reference="Luv-ix-YcF"/>
                                                 <include reference="KPJ-pp-qsE"/>
                                                 <include reference="aO0-Hs-vjI"/>
+                                                <include reference="29O-2F-SFB"/>
+                                                <include reference="Luv-ix-YcF"/>
                                                 <include reference="Vj3-uz-un8"/>
                                                 <include reference="xpq-fs-JpU"/>
                                                 <include reference="gJ1-IF-05a"/>
@@ -662,6 +706,8 @@
                                                 <include reference="eWb-CX-e09"/>
                                                 <include reference="1IN-yA-mRv"/>
                                                 <include reference="xN7-eQ-2qV"/>
+                                                <include reference="1ky-pT-Mua"/>
+                                                <include reference="B5O-Oe-Svd"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -792,6 +838,23 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="gameStateLabel" destination="4kc-fu-t6j" id="Ane-2v-F4V"/>
+                        <outlet property="gameStateNavBar" destination="puG-gB-nMf" id="p9x-6b-8iQ"/>
+                        <outletCollection property="lightButtons" destination="gcv-dP-Neu" collectionClass="NSMutableArray" id="LKZ-mX-kD0"/>
+                        <outletCollection property="lightButtons" destination="Pe8-I0-Ypg" collectionClass="NSMutableArray" id="FWU-xv-fTw"/>
+                        <outletCollection property="lightButtons" destination="G8W-Eq-00e" collectionClass="NSMutableArray" id="R8h-A6-Iew"/>
+                        <outletCollection property="lightButtons" destination="0xM-w3-Ee5" collectionClass="NSMutableArray" id="kuK-DY-Vsd"/>
+                        <outletCollection property="lightButtons" destination="156-R6-Meb" collectionClass="NSMutableArray" id="FGv-dg-XR1"/>
+                        <outletCollection property="lightButtons" destination="2OH-bj-y6m" collectionClass="NSMutableArray" id="iHb-GN-FPJ"/>
+                        <outletCollection property="lightButtons" destination="Zkk-d9-woZ" collectionClass="NSMutableArray" id="urO-1e-Jg7"/>
+                        <outletCollection property="lightButtons" destination="bQO-vo-fUN" collectionClass="NSMutableArray" id="wsk-r3-Jmm"/>
+                        <outletCollection property="lightButtons" destination="fnP-p3-Rfg" collectionClass="NSMutableArray" id="oNj-WX-yx0"/>
+                        <outletCollection property="lightButtons" destination="12j-rM-f7Y" collectionClass="NSMutableArray" id="25u-D2-43W"/>
+                        <outletCollection property="lightButtons" destination="m8A-4d-xEO" collectionClass="NSMutableArray" id="84J-G8-gtU"/>
+                        <outletCollection property="lightButtons" destination="JVH-tc-ucz" collectionClass="NSMutableArray" id="uwY-6P-Eyh"/>
+                        <outletCollection property="lightButtons" destination="2rV-t9-g8a" collectionClass="NSMutableArray" id="EC7-Gx-EDn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
