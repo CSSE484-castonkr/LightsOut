@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LightsOut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aFN-LP-POo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puG-gB-nMf">
@@ -47,13 +47,13 @@
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2H-eO-yxE" userLabel="Usable Area">
-                                <rect key="frame" x="0.0" y="20" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-w1-cSR" userLabel="Game Board">
-                                        <rect key="frame" x="82" y="146" width="250" height="380"/>
+                                        <rect key="frame" x="134" y="130" width="500" height="700"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-dP-Neu">
-                                                <rect key="frame" x="25" y="320" width="50" height="50"/>
+                                                <rect key="frame" x="50" y="600" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="F4w-Av-vgr"/>
                                                     <constraint firstAttribute="width" constant="100" id="YfB-yf-Uag"/>
@@ -86,7 +86,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-I0-Ypg">
-                                                <rect key="frame" x="25" y="260" width="50" height="50"/>
+                                                <rect key="frame" x="50" y="480" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="26N-RX-CR6"/>
                                                     <constraint firstAttribute="height" constant="100" id="gft-qy-WWq"/>
@@ -119,7 +119,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8W-Eq-00e">
-                                                <rect key="frame" x="25" y="200" width="50" height="50"/>
+                                                <rect key="frame" x="50" y="360" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="DBM-6q-vXc"/>
                                                     <constraint firstAttribute="height" constant="100" id="ZzS-JA-sR7"/>
@@ -152,7 +152,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xM-w3-Ee5">
-                                                <rect key="frame" x="25" y="140" width="50" height="50"/>
+                                                <rect key="frame" x="50" y="240" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="1Y6-x4-5KY"/>
                                                     <constraint firstAttribute="height" constant="50" id="EO3-ob-Sh6"/>
@@ -185,7 +185,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="156-R6-Meb">
-                                                <rect key="frame" x="25" y="80" width="50" height="50"/>
+                                                <rect key="frame" x="50" y="120" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="E8D-qz-gcb"/>
                                                     <constraint firstAttribute="width" constant="100" id="EWf-XP-Yq7"/>
@@ -218,7 +218,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OH-bj-y6m">
-                                                <rect key="frame" x="25" y="20" width="50" height="50"/>
+                                                <rect key="frame" x="50" y="0.0" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="VtR-yN-40g"/>
                                                     <constraint firstAttribute="width" constant="50" id="aIJ-3D-XhF"/>
@@ -251,7 +251,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkk-d9-woZ">
-                                                <rect key="frame" x="95" y="20" width="50" height="50"/>
+                                                <rect key="frame" x="185" y="0.0" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="0QD-m3-okX"/>
                                                     <constraint firstAttribute="height" constant="50" id="9Tl-0Y-dvi"/>
@@ -284,7 +284,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQO-vo-fUN">
-                                                <rect key="frame" x="155" y="48" width="50" height="50"/>
+                                                <rect key="frame" x="310" y="56" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="KpI-mc-y5e"/>
                                                     <constraint firstAttribute="height" constant="50" id="e5Q-Xb-HVc"/>
@@ -317,7 +317,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-p3-Rfg">
-                                                <rect key="frame" x="182" y="110" width="50" height="50"/>
+                                                <rect key="frame" x="370" y="180" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="LDD-sk-Olc"/>
                                                     <constraint firstAttribute="width" constant="100" id="MY1-qz-oUt"/>
@@ -350,7 +350,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12j-rM-f7Y">
-                                                <rect key="frame" x="155" y="172" width="50" height="50"/>
+                                                <rect key="frame" x="310" y="304" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="GwZ-jS-X3u"/>
                                                     <constraint firstAttribute="width" constant="50" id="I9G-IU-P7x"/>
@@ -389,7 +389,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8A-4d-xEO">
-                                                <rect key="frame" x="95" y="200" width="50" height="50"/>
+                                                <rect key="frame" x="190" y="360" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="67C-i4-ixH"/>
                                                     <constraint firstAttribute="height" constant="100" id="A1j-Vt-aBS"/>
@@ -428,7 +428,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVH-tc-ucz">
-                                                <rect key="frame" x="135" y="260" width="50" height="50"/>
+                                                <rect key="frame" x="270" y="480" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="59e-qF-SDE"/>
                                                     <constraint firstAttribute="width" constant="50" id="Hfn-gU-rJo"/>
@@ -467,7 +467,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rV-t9-g8a">
-                                                <rect key="frame" x="175" y="320" width="50" height="50"/>
+                                                <rect key="frame" x="350" y="600" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="9jI-qw-S0l"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="SZh-AS-Pdz"/>
