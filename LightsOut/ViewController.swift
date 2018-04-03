@@ -30,28 +30,28 @@ class ViewController: UIViewController {
     
     @IBAction func lightButtonPressed(_ sender: Any) {
         let lightButton = sender as! UIButton
-        game.pressedLightAtIndex(lightButton.tag)
+        game?.pressedLight(at: lightButton.tag)
         updateView()
     }
     
     func updateView() {
         let on = #imageLiteral(resourceName: "light_on")
         let off = #imageLiteral(resourceName: "light_off")
-        let lightStates = game.lightStates
-        print(game.checkWin())
-        
-      
-        
+        let numLights:Int = (game?.numLights)!
+        let movesTaken:Int = (game?.movesTaken)!
+    
+//        print(game?.checkWin())
+    
         // iPhone
         if (traitCollection.horizontalSizeClass == UIUserInterfaceSizeClass.compact) {
-            gameStateLabel.text = "Moves: \(game.movesTaken)"
+            gameStateLabel.text = String(format: "Moves: %d", movesTaken)
         } else {
-            gameStateNavBar.topItem?.title = "Moves: \(game.movesTaken)"
+            gameStateNavBar.topItem?.title = String(format: "Moves: %d", movesTaken)
         }
         
-        for i in 0..<lightStates.count {
+        for i in 0..<numLights{
             let button = lightButtons[i]
-            if (lightStates[i]) {
+            if (game?.isLightOn(at: i))! {
                 button.setBackgroundImage(on, for: UIControlState.normal)
             } else {
                 button.setBackgroundImage(off, for: UIControlState.normal)
